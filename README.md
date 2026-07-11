@@ -2,7 +2,7 @@
 
 Sitio web personal de **Agustina Sidorowicz**, actriz de cine y teatro — Córdoba, Argentina.
 
-🔗 **Ver el sitio:** https://TU-USUARIO.github.io/  <!-- reemplazar por la URL real una vez publicado -->
+🔗 **Ver el sitio:** https://agustinasidorowicz.github.io/Portfolio-AgustinaSidorowicz/
 
 ## Sobre el sitio
 
