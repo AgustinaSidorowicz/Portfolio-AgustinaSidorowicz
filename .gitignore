@@ -1,0 +1,12 @@
+# Respaldo de imágenes originales sin comprimir — NO se publica (pesa ~91 MB)
+assets/images/_originals/
+
+# Video de "La muni" reemplazado por YouTube — ya no se usa (10 MB). Si volvés
+# a usarlo localmente, quitá esta línea.
+assets/images/works/video-publicidad-Agus.mp4
+
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini

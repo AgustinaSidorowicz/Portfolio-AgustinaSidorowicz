@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agustina Sidorowicz — Actriz de Cine y Teatro</title>
+<meta name="description" content="Portfolio de Agustina Sidorowicz, actriz de cine y teatro, Córdoba, Argentina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">A. Sidorowicz</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+    <li><a href="#reel" data-es="Reel" data-en="Reel">Reel</a></li>
+    <li><a href="#works" data-es="Trabajos" data-en="Works">Trabajos</a></li>
+    <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button id="lang-es" class="active" onclick="setLang('es')">ES</button>
+      <span>/</span>
+      <button id="lang-en" onclick="setLang('en')">EN</button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-wrap" id="hero-bg-wrap">
+    <img class="hero-bg" id="hero-bg-1"
+         onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1600&q=80'"
+         alt="Agustina Sidorowicz">
+    <img class="hero-bg" id="hero-bg-2"
+         onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1600&q=80'"
+         alt="Agustina Sidorowicz">
+  </div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <h1>Agustina<br>Sidorowicz</h1>
+    <p class="tagline" data-es="Lic. en Teatro — Universidad Nacional de Córdoba" data-en="B.A. in Theatre — Universidad Nacional de Córdoba">Lic. en Teatro — Universidad Nacional de Córdoba</p>
+  </div>
+  <div class="scroll-indicator"></div>
+</section>
+
+<section id="about" class="fade-in">
+  <div class="about-grid">
+    <div class="about-photo">
+      <img class="about-photo-img active" id="about-photo-1" alt="Agustina Sidorowicz">
+      <img class="about-photo-img" id="about-photo-2" alt="Agustina Sidorowicz">
+    </div>
+    <div>
+      <p class="eyebrow" data-es="Quién soy" data-en="Who I am">Quién soy</p>
+      <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+      <p class="bio" data-es="Actriz de cine y teatro. Directora de actores."
+            data-en="Film and theater actress. Director of actors.">
+        Actriz de cine y teatro. Directora de actores.
+      </p>
+      <div class="about-data">
+        <div class="item">
+          <div class="label" data-es="Formación" data-en="Training">Formación</div>
+          <div class="value" data-es="Lic. en Teatro<br>Profesora en Teatro<br>Diplomatura en actuación frente a cámara"
+               data-en="B.A. in Theatre<br>Theatre Teacher<br>Diploma in On-Camera Acting">Lic. en Teatro<br>Profesora en Teatro<br>Diplomatura en actuación frente a cámara</div>
+        </div>
+        <div class="item">
+          <div class="label" data-es="Maestros" data-en="Teachers">Maestros</div>
+          <div class="value" data-es="Próximamente" data-en="Coming soon">Próximamente</div>
+        </div>
+        <div class="item">
+          <div class="label" data-es="residencia actual" data-en="current residence">residencia actual</div>
+          <div class="value">Córdoba, Argentina</div>
+        </div>
+        <div class="item">
+          <div class="label" data-es="Idiomas" data-en="Languages">Idiomas</div>
+          <div class="value" data-es="Español nativo<br>Inglés C1<br>Alemán A2"
+               data-en="Native Spanish<br>English C1<br>German A2">Español nativo<br>Inglés C1<br>Alemán A2</div>
+        </div>
+        <div class="item">
+          <div class="label" data-es="Otros datos" data-en="Other">Otros datos</div>
+          <div class="value" data-es="Pasaporte polaco<br>Licencia de conducir"
+               data-en="Polish passport<br>Driver's license">Pasaporte polaco<br>Licencia de conducir</div>
+        </div>
+      </div>
+
+      <div class="gallery-carousel">
+        <p class="gallery-label" data-es="Galería" data-en="Gallery">Galería</p>
+        <div class="carousel-track-wrap">
+          <div class="carousel-track" id="carousel-track">
+            <div class="slide"><img src="assets/images/gallery/gallery-1.jpg" alt="Foto 1"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-2.jpg" alt="Foto 2"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-3.jpg" alt="Foto 3"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-4.jpg" alt="Foto 4"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-5.jpg" alt="Foto 5"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-6.jpg" alt="Foto 6"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-7.jpg" alt="Foto 7"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-8.jpg" alt="Foto 8"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-9.jpg" alt="Foto 9"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-10.jpg" alt="Foto 10"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-11.jpg" alt="Foto 11"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-12.jpg" alt="Foto 12"></div>
+            <div class="slide"><img src="assets/images/gallery/gallery-13.jpg" alt="Foto 13"></div>
+
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="carousel-prev" aria-label="Anterior">‹</button>
+          <button id="carousel-next" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reel" class="fade-in">
+  <p class="eyebrow" data-es="Presentación" data-en="Showreel" style="text-align:center;">Presentación</p>
+  <h2 data-es="Reel" data-en="Reel">Reel</h2>
+  <div class="reel-wrap" id="reel-wrap">
+    <img class="reel-poster" id="reel-poster" src="assets/images/reel-poster.jpg"
+         onerror="this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1200&q=80'"
+         alt="Reel poster">
+    <div class="reel-play" id="reel-play">
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </div>
+    <iframe id="reel-iframe" src="" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="works" class="fade-in">
+  <h2 data-es="Trabajos" data-en="Works">Trabajos</h2>
+
+  <div class="works-group">
+    <div class="works-subhead" data-es="Videoclips" data-en="Music videos">Videoclips</div>
+    <div class="works-grid">
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/JLY9xpqb4BM?start=2&autoplay=1">
+        <img src="https://i.ytimg.com/vi/JLY9xpqb4BM/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/JLY9xpqb4BM/hqdefault.jpg'"
+             alt="Y eres tú" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Videoclip" data-en="Music video">Videoclip</div>
+          <div class="title">LOS TEKIS Ft.@LaKonga - Y Eres Tú [ Video Oficial ]</div>
+          <div class="subtitle"></div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/x0AuKXWknxg?autoplay=1">
+        <img src="https://i.ytimg.com/vi/x0AuKXWknxg/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/x0AuKXWknxg/hqdefault.jpg'"
+             alt="Ibis" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Videoclip" data-en="Music video">Videoclip</div>
+          <div class="title">IBIS: El Comienzo de la Redención - Buji Molas (REDENTORA)</div>
+          <div class="subtitle" data-es="Performer y directora de actores" data-en="Performer &amp; acting director">Performer y directora de actores</div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="works-group">
+    <div class="works-subhead" data-es="Cine" data-en="Film">Cine</div>
+    <div class="works-grid">
+
+      <div class="work-card featured" data-video-url="https://www.youtube.com/embed/Xz9hf-6Xyvc?autoplay=1">
+        <img src="https://i.ytimg.com/vi/Xz9hf-6Xyvc/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/Xz9hf-6Xyvc/hqdefault.jpg'"
+             alt="Vértice" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Serie web" data-en="Web series">Serie web</div>
+          <div class="title">Vértice</div>
+          <div class="subtitle" data-es="Protagonista" data-en="Lead role">Protagonista</div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/hF71v5F35-4?autoplay=1">
+        <img src="https://i.ytimg.com/vi/hF71v5F35-4/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/hF71v5F35-4/hqdefault.jpg'"
+             alt="Hay alguien ahí" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Cortometraje" data-en="Short film">Cortometraje</div>
+          <div class="title">Hay alguien ahí</div>
+          <div class="subtitle" data-es="Protagonista" data-en="Lead role">Protagonista</div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/aoZAoo9s7VY?autoplay=1">
+        <img src="https://i.ytimg.com/vi/aoZAoo9s7VY/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/aoZAoo9s7VY/hqdefault.jpg'"
+             alt="Los cardenales rojos" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Cine" data-en="Film">Cine</div>
+          <div class="title">Los cardenales rojos</div>
+          <div class="subtitle" data-es="Fragmento" data-en="Excerpt">Fragmento</div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/kcX_4Fw9fmM?autoplay=1">
+        <img src="https://i.ytimg.com/vi/kcX_4Fw9fmM/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/kcX_4Fw9fmM/hqdefault.jpg'"
+             alt="Como la maleza" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Cortometraje" data-en="Short film">Cortometraje</div>
+          <div class="title">Como la maleza</div>
+          <div class="subtitle" data-es="Cortometraje universitario" data-en="University short film">Cortometraje universitario</div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="works-group">
+    <div class="works-subhead" data-es="Publicidad" data-en="Advertising">Publicidad</div>
+    <div class="works-grid">
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/wa7rtYZYaCU?autoplay=1">
+        <img src="https://i.ytimg.com/vi/wa7rtYZYaCU/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/wa7rtYZYaCU/hqdefault.jpg'"
+             alt="La muni" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Publicidad" data-en="Advertising">Publicidad</div>
+          <div class="title">La muni</div>
+          <div class="subtitle" data-es="Varios clientes" data-en="Various clients">Varios clientes</div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="works-group">
+    <div class="works-subhead" data-es="Teatro" data-en="Theatre">Teatro</div>
+    <div class="works-grid">
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/HoifYXZeAL0?autoplay=1">
+        <img src="https://i.ytimg.com/vi/HoifYXZeAL0/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HoifYXZeAL0/hqdefault.jpg'"
+             alt="Rompo la mesa" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Teatro" data-en="Theatre">Teatro</div>
+          <div class="title">Rompo la mesa</div>
+          <div class="subtitle"></div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/TDze6Y7yIgo?autoplay=1">
+        <img src="https://i.ytimg.com/vi/TDze6Y7yIgo/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/TDze6Y7yIgo/hqdefault.jpg'"
+             alt="Escena taller 2022" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Teatro" data-en="Theatre">Teatro</div>
+          <div class="title">Escena taller 2022</div>
+          <div class="subtitle"></div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+      <div class="work-card" data-video-url="https://www.youtube.com/embed/SitxZE5j6G4?autoplay=1">
+        <img src="https://i.ytimg.com/vi/SitxZE5j6G4/maxresdefault.jpg"
+             onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/SitxZE5j6G4/hqdefault.jpg'"
+             alt="Escena" loading="lazy">
+        <div class="overlay">
+          <div class="type" data-es="Teatro" data-en="Theatre">Teatro</div>
+          <div class="title" data-es="Escena" data-en="Scene">Escena</div>
+          <div class="subtitle"></div>
+        </div>
+        <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <iframe id="lightbox-iframe" src="" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</div>
+
+<section id="contact" class="fade-in">
+  <h2 data-es="Trabajemos juntos" data-en="Let's work together">Trabajemos juntos</h2>
+  <div class="contact-icons">
+    <div class="contact-icon" id="contact-email">
+      <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.5l8 5.5 8-5.5V6H4zm16 2.7-7.4 5.1a1 1 0 0 1-1.2 0L4 8.7V18h16V8.7z"/></svg>
+      <span data-es="Email" data-en="Email">Email</span>
+    </div>
+    <div class="contact-icon" id="contact-whatsapp">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 0 1 6.9 12.1l-.3.5.6 2.2-2.2-.6-.5.3A8 8 0 1 1 12 4zm-3 4c-.3 0-.7.1-.9.5-.3.4-1 1.2-1 2.3 0 1.5 1.6 3.5 1.8 3.8.2.3 2.4 3.6 5.8 4.6 2.9.8 2.9-.2 3.4-.6.4-.5.4-1.2.3-1.4-.1-.2-2-1-2.3-1.1-.3-.1-.5-.1-.8.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.4-.5-2.6-1.7-1-1-1.7-2.2-1.9-2.5-.2-.3 0-.5.1-.7l.6-.7c.2-.2.1-.5 0-.7-.1-.2-.6-1.5-.9-2-.2-.4-.5-.4-.8-.4z"/></svg>
+      <span>WhatsApp</span>
+    </div>
+    <a class="contact-icon" href="https://www.instagram.com/agustinasido" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+      <span>Instagram</span>
+    </a>
+  </div>
+  <div class="contact-reveal" id="contact-reveal"></div>
+  <a class="cv-btn" href="https://drive.google.com/uc?export=download&id=11QrfnV6p1DkfInrLYAVGyrS6_4nwF-OF" target="_blank" rel="noopener" data-es="Descargar CV" data-en="Download CV">Descargar CV</a>
+</section>
+
+<footer>
+  <div class="footer-brand">
+    <span class="footer-logo">Agustina Sidorowicz</span>
+    <span class="footer-copy">&copy; <span id="footer-year"></span> &middot; <span data-es="Todos los derechos reservados" data-en="All rights reserved">Todos los derechos reservados</span></span>
+  </div>
+  <a class="footer-social" href="https://www.instagram.com/agustinasido" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+  </a>
+</footer>
+
+<script src="script.js?v=1"></script>
+
+</body>
+</html>
