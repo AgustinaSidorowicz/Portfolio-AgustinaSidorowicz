@@ -60,6 +60,18 @@ navLinks.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', closeNavMenu);
 });
 
+// Cerrar el menú al scrollear o al tocar fuera de él, para que no quede abierto
+// mientras se navega la página o se abren videos en mobile.
+window.addEventListener('scroll', () => {
+  if (navLinks.classList.contains('open')) closeNavMenu();
+});
+
+document.addEventListener('click', (e) => {
+  if (!navLinks.classList.contains('open')) return;
+  if (navLinks.contains(e.target) || navToggle.contains(e.target)) return;
+  closeNavMenu();
+});
+
 // ===== Fade in on scroll =====
 const faders = document.querySelectorAll('.fade-in');
 const io = new IntersectionObserver((entries) => {
