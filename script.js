@@ -74,8 +74,9 @@ function setLang(l) {
   document.querySelectorAll('[data-' + l + ']').forEach(el => {
     el.innerHTML = el.getAttribute('data-' + l);
   });
-  document.getElementById('lang-es').classList.toggle('active', l === 'es');
-  document.getElementById('lang-en').classList.toggle('active', l === 'en');
+  ['es', 'en', 'de'].forEach(code => {
+    document.getElementById('lang-' + code).classList.toggle('active', l === code);
+  });
   document.documentElement.lang = l;
 }
 // Aplicar el idioma por defecto al cargar para que los textos data-es se muestren

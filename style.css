@@ -324,6 +324,26 @@ nav.scrolled{
   border-color:var(--accent);
   color:var(--accent);
 }
+.gallery-more{
+  margin-left:auto;
+  align-self:center;
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  white-space:nowrap;
+  font-size:0.75rem;
+  text-transform:uppercase;
+  letter-spacing:0.15em;
+  color:var(--muted);
+  transition:color 0.3s ease;
+}
+.gallery-more::after{
+  content:'→';
+  font-size:0.9rem;
+  transition:transform 0.3s ease;
+}
+.gallery-more:hover{color:var(--accent);}
+.gallery-more:hover::after{transform:translateX(3px);}
 
 /* ===== REEL ===== */
 #reel{background:var(--bg-soft);text-align:center;}
@@ -447,6 +467,12 @@ nav.scrolled{
 .work-card .subtitle{
   color:var(--muted);
   font-size:0.85rem;
+}
+.work-card .year{
+  color:var(--accent);
+  font-size:0.75rem;
+  letter-spacing:0.1em;
+  margin-top:0.4rem;
 }
 .work-card .play-icon{
   position:absolute;
